@@ -8,24 +8,25 @@ import {
 } from "@material-tailwind/react";
 import {
   RectangleStackIcon,
-  UserCircleIcon,
+  HeartIcon,
   CommandLineIcon,
   XMarkIcon,
   Bars3Icon,
+  ClipboardIcon,
 } from "@heroicons/react/24/solid";
 
 const NAV_MENU = [
   {
-    name: "Page",
+    name: "Home",
     icon: RectangleStackIcon,
   },
   {
-    name: "Account",
-    icon: UserCircleIcon,
+    name: "Recipes",
+    icon: ClipboardIcon,
   },
   {
-    name: "Docs",
-    icon: CommandLineIcon,
+    name: "Eat Healthy",
+    icon: HeartIcon,
     href: "https://www.material-tailwind.com/docs/react/installation",
   },
 ];
@@ -69,12 +70,12 @@ export function Navbar() {
       <div className="container mx-auto flex items-center justify-between">
         <Typography
           as="a"
-          href="https://www.material-tailwind.com"
+          href="https://fyp23s414p.wordpress.com/"
           target="_blank"
           color="blue-gray"
           className="text-lg font-bold"
         >
-          Material Tailwind
+          LOGO
         </Typography>
         <ul className="ml-10 hidden items-center gap-8 lg:flex">
           {NAV_MENU.map(({ name, icon: Icon, href }) => (
@@ -86,8 +87,8 @@ export function Navbar() {
         </ul>
         <div className="hidden items-center gap-2 lg:flex">
           <Button variant="text">Sign In</Button>
-          <a href="https://www.material-tailwind.com/blocks" target="_blank">
-            <Button color="gray">blocks</Button>
+          <a href="https://getstarted.com" target="_blank">
+            <Button color="gray">Get Started</Button>
           </a>
         </div>
         <IconButton
